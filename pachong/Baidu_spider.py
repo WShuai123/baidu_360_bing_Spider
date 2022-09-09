@@ -42,5 +42,4 @@ if __name__ == "__main__":
     org_url = "https://image.baidu.com/search/acjson?tn=resultjson_com&word={}&pn=".format(text)
     if not os.path.isdir('./%s' % text):
         os.mkdir('./%s' % text)
-        # os.mkdir('./%s修改后' % text)
     xhr_url(url_xhr=org_url, start_num=int(input("开始页:")), page=int(input("所需爬取页数:")))
